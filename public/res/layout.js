@@ -401,9 +401,9 @@ define([
 	}
 
 	layout.init = function() {
-
+		var stackedit = document.getElementById('stackedit');
 		var isModalShown = 0;
-		$(document.body).on('show.bs.modal', '.modal', function() {
+		$(stackedit).on('show.bs.modal', '.modal', function() {
 			// Close panel if open
 			menuPanel.toggle(false);
 			documentPanel.toggle(false);
@@ -413,14 +413,14 @@ define([
 		});
 
 		// Tweak the body element
-		(function(bodyStyle) {
-			bodyStyle.position = 'absolute';
-			bodyStyle.top = 0;
-			bodyStyle.left = 0;
-			bodyStyle.bottom = 0;
-			bodyStyle.right = 0;
-			bodyStyle.overflow = 'hidden';
-		})(document.body.style);
+		(function(stackeditStyle) {
+			stackeditStyle.position = 'absolute';
+			stackeditStyle.top = 0;
+			stackeditStyle.left = 0;
+			stackeditStyle.bottom = 0;
+			stackeditStyle.right = 0;
+			stackeditStyle.overflow = 'hidden';
+		})(stackedit.style);
 		document.documentElement.style.overflow = 'hidden';
 
 		wrapperL1 = new DomObject('.layout-wrapper-l1');

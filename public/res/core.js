@@ -288,14 +288,15 @@ define([
 
 	// Initialize multiple things and then fire eventMgr.onReady
 	core.onReady = function() {
+		var stackedit = document.getElementById('stackedit');
 		// Add RTL class
-		document.body.className += ' ' + settings.editMode;
+		stackedit.className += ' ' + settings.editMode;
 
 		if(window.viewerMode === true) {
-			document.body.innerHTML = bodyViewerHTML;
+			stackedit.innerHTML = bodyViewerHTML;
 		}
 		else {
-			document.body.innerHTML = bodyEditorHTML;
+			stackedit.innerHTML = bodyEditorHTML;
 		}
 
 		// Initialize utils library
