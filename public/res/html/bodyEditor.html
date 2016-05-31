@@ -307,12 +307,31 @@
 				<h2 class="modal-title">Image</h2>
 			</div>
 			<div class="modal-body">
-				<p>Please provide the image URL and an optional title:</p>
-				<div class="input-group">
-					<span class="input-group-addon"><i class="icon-picture"></i></span><input
-						id="input-insert-image" type="text" class="col-sm-5 form-control"
-						placeholder='http://example.com/image.jpg "optional title"' />
-				</div>
+				  <!-- Nav tabs -->
+				  <ul class="nav nav-tabs" role="tablist">
+				    <li role="presentation" class="active">
+				    	<a href="#img_online" aria-controls="img_online" role="tab" data-toggle="tab">在线图片</a>
+				    </li>
+				    <li role="presentation">
+				    	<a href="#img_upload" aria-controls="img_upload" role="tab" data-toggle="tab">上传图片</a>
+				    </li>
+				  </ul>
+				  <!-- Tab panes -->
+				  <div class="tab-content">
+				    <div role="tabpanel" class="tab-pane active" id="img_online">
+							<p>Please provide the image URL and an optional title:</p>
+							<div class="input-group">
+								<span class="input-group-addon"><i class="icon-picture"></i></span><input
+									id="input-insert-image" type="text" class="col-sm-5 form-control"
+									placeholder='http://example.com/image.jpg "optional title"' />
+							</div>
+				    </div>
+				    <div role="tabpanel" class="tab-pane" id="img_upload">
+	            <iframe src="http://ask.csdn.net/upload.html"></iframe>
+	            <!-- <iframe name="up_img" src="http://write.blog.csdn.net/article/UploadImgMarkdown?parenthost=write.blog.csdn.net ">
+	            </iframe> -->
+				    </div>
+				  </div>
 			</div>
 			<div class="modal-footer">
 				<!-- <a href="#" class="btn btn-default pull-left action-import-image-gplus"
