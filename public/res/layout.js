@@ -269,9 +269,10 @@ define([
 	}
 
 	function resizeAll() {
+		var $stackedit = document.getElementById('stackedit');
 		windowSize = {
-			width: window.innerWidth,
-			height: window.innerHeight
+			width: $stackedit.clientWidth,
+			height: $stackedit.clientHeight
 		};
 
 		while(true) {
