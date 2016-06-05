@@ -24483,9 +24483,10 @@ this.DIFF_EQUAL = DIFF_EQUAL, define("diff_match_patch_uncompressed", function(e
   C.right = C.isShown ? 0 : -j, C.elt.style.right = C.right + "px";
  }
  function g() {
+  var e = document.getElementById("stackedit");
   for (v = {
-   width: window.innerWidth,
-   height: window.innerHeight
+   width: e.clientWidth,
+   height: e.clientHeight
   }; ;) {
    if (b.y = w.isOpen ? 0 : -P, b.x = S.isOpen ? 0 : C.isOpen ? -(B + j) : -B, b.width = v.width + B + j, 
    b.height = v.height - b.y, y.left = B, y.width = v.width, y.height = b.height, x.top = P, 
@@ -24497,12 +24498,12 @@ this.DIFF_EQUAL = DIFF_EQUAL, define("diff_match_patch_uncompressed", function(e
      if (k.isOpen) {
       if (k.halfSize && (k.height = (x.height + A) / 2), k.height < F.height && (k.height = F.height), 
       k.y = x.height - k.height, k.y < O.height) {
-       var e = x.height - O.height;
-       if (e < F.height) {
+       var t = x.height - O.height;
+       if (t < F.height) {
         k.isOpen = !1, k.$elt.trigger("hide.layout.toggle").trigger("hidden.layout.toggle");
         continue;
        }
-       k.height = e, k.y = x.height - k.height;
+       k.height = t, k.y = x.height - k.height;
       }
      } else k.y = x.height - A;
      k.width = x.width, _.height = k.y, _.width = x.width, E.top = A, E.height = k.height - A, 
@@ -24511,12 +24512,12 @@ this.DIFF_EQUAL = DIFF_EQUAL, define("diff_match_patch_uncompressed", function(e
      if (k.isOpen) {
       if (k.halfSize && (k.width = (x.width + A) / 2), k.width < F.width && (k.width = F.width), 
       k.x = x.width - k.width, k.x < O.width) {
-       var t = x.width - O.width;
-       if (t < F.width) {
+       var n = x.width - O.width;
+       if (n < F.width) {
         k.isOpen = !1, k.$elt.trigger("hide.layout.toggle").trigger("hidden.layout.toggle");
         continue;
        }
-       k.width = t, k.x = x.width - k.width;
+       k.width = n, k.x = x.width - k.width;
       }
      } else k.x = x.width - A;
      k.height = x.height, _.width = k.x, _.height = x.height, E.left = A, E.width = k.width - A, 
