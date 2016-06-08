@@ -12,7 +12,7 @@ define([
 	"extensions/markdownSectionParser",
 	"extensions/partialRendering",
 	"extensions/buttonMarkdownSyntax",
-	"extensions/googleAnalytics",
+	// "extensions/googleAnalytics",
 	// "extensions/twitter",
 	"extensions/dialogAbout",
 	"extensions/dialogManagePublication",
