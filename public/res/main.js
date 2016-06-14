@@ -71,7 +71,10 @@ requirejs.config({
 		'to-markdown': 'bower-libs/to-markdown/src/to-markdown',
 		waitForImages: 'bower-libs/waitForImages/dist/jquery.waitforimages',
 		MathJax: 'https://cdnjs.xueliang.org/ajax/libs/mathjax/2.6.1/MathJax',
-		alertify: 'bower-libs/alertify.js/lib/alertify'
+		alertify: 'bower-libs/alertify.js/lib/alertify',
+		plupload: 'bower-libs/plupload/js/plupload.full.min',
+		qiniu: 'bower-libs/qiniu/dist/qiniu',
+		stackeditHelper: 'helpers/stackeditHelper'
 	},
 	shim: {
 		underscore: {
@@ -165,7 +168,14 @@ requirejs.config({
 		Diagram: [
 			'raphael',
 			'diagram-grammar'
-		]
+		],
+		plupload: {
+			exports: 'plupload'
+		},
+		qiniu: {
+			deps: ['plupload'],
+			exports: 'QiniuJsSDK'
+		}
 	}
 });
 
@@ -210,6 +220,8 @@ require([
 	"mediaImporter",
 	"css",
 	"rangy-cssclassapplier",
+	'upload',
+	'stackeditHelper',
 	themeModule
 ], function($, rangy, core, eventMgr) {
 
