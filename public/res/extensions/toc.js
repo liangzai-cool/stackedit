@@ -119,6 +119,8 @@ define([
         return '<div class="toc">\n<ul>\n' + elementList.join("") + '</ul>\n</div>\n';
     }
 
+    toc.buildToc = buildToc;
+
     toc.onPagedownConfigure = function(editor) {
         previewContentsElt = document.getElementById('preview-contents');
         var tocExp = new RegExp("^\\s*" + toc.config.marker + "\\s*$");
