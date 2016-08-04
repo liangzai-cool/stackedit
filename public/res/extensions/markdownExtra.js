@@ -79,7 +79,8 @@ define([
 		var converter = editor.getConverter();
 		var extraOptions = {
 			extensions: markdownExtra.config.extensions,
-			highlighter: "prettify"
+			highlighter: "prettify",
+			table_class: "table table-bordered"
 		};
 
 		if(markdownExtra.config.intraword === true) {
