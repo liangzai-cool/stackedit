@@ -116,7 +116,7 @@ define([
             elementList.push(new TocElement(elt.tagName, createAnchor(elt), elt.textContent));
         });
         elementList = groupTags(elementList);
-        return '<div class="toc">\n<ul>\n' + elementList.join("") + '</ul>\n</div>\n';
+        return '<div class="toc">\n<ul>\n<li><a href="javascript:void(0);">Table of Contents</a>\n<ul>\n' + elementList.join("") + '</ul>\n</li>\n</ul>\n</div>\n';
     }
 
     toc.buildToc = buildToc;
