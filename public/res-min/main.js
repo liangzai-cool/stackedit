@@ -13330,7 +13330,8 @@ function() {
  }, l.onPagedownConfigure = function(e) {
   var n = e.getConverter(), i = {
    extensions: l.config.extensions,
-   highlighter: "prettify"
+   highlighter: "prettify",
+   table_class: "table table-bordered"
   };
   if (l.config.intraword === !0) {
    var r = {
@@ -19602,7 +19603,7 @@ function() {
   var i = {}, r = [];
   return t.each(u.querySelectorAll("h1, h2, h3, h4, h5, h6"), function(t) {
    r.push(new a(t.tagName, e(t), t.textContent));
-  }), r = s(r), '<div class="toc">\n<ul>\n' + r.join("") + "</ul>\n</div>\n";
+  }), r = s(r), '<div class="toc">\n<ul>\n<li><a href="javascript:void(0);">Table of Contents</a>\n<ul>\n' + r.join("") + "</ul>\n</li>\n</ul>\n</div>\n";
  }
  var c = new i("toc", "Table of Contents", !0);
  c.settingsBlock = o, c.defaultConfig = {
@@ -33174,7 +33175,7 @@ this.DIFF_EQUAL = DIFF_EQUAL, define("diff_match_patch_uncompressed", function(e
   "mousetrap-record": "bower-libs/mousetrap/plugins/record/mousetrap-record",
   toMarkdown: "bower-libs/to-markdown/src/to-markdown",
   text: "bower-libs/requirejs-text/text",
-  mathjax: "https://cdnjs.xueliang.org/ajax/libs/mathjax/2.6.1/MathJax.js?config=TeX-AMS_SVG",
+  mathjax: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js?config=TeX-AMS_SVG",
   bootstrap: "bower-libs/bootstrap/dist/js/bootstrap",
   requirejs: "bower-libs/requirejs/require",
   "google-code-prettify": "bower-libs/google-code-prettify/src/prettify",
@@ -33221,7 +33222,7 @@ this.DIFF_EQUAL = DIFF_EQUAL, define("diff_match_patch_uncompressed", function(e
   monetizejs: "bower-libs/monetizejs/src/monetize",
   "to-markdown": "bower-libs/to-markdown/src/to-markdown",
   waitForImages: "bower-libs/waitForImages/dist/jquery.waitforimages",
-  MathJax: "https://cdnjs.xueliang.org/ajax/libs/mathjax/2.6.1/MathJax",
+  MathJax: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax",
   alertify: "bower-libs/alertify.js/lib/alertify",
   plupload: "bower-libs/plupload/js/plupload.full.min",
   qiniu: "bower-libs/qiniu/dist/qiniu",
