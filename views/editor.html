@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html<%- cache ? ' manifest="cache.manifest"' : '' %>>
+<html>
 
     <head>
         <title>StackEdit – Editor</title>
@@ -19,7 +19,7 @@
         <meta name="msvalidate.01" content="5E47EE6F67B069C17E3CDD418351A612">
         <script>
             // Use ?debug to serve original JavaScript files instead of minified
-            window.baseDir = 'res';
+            window.baseDir = '../public/res';
             if (!/(\?|&)debug($|&)/.test(location.search)) {
                 window.baseDir += '-min';
             }
@@ -28,7 +28,7 @@
                 deps: ['main']
             };
         </script>
-        <script src="res-min/require.js"></script>
+        <script src="../public/res-min/require.js"></script>
         <style>
           #stackedit {
             margin: 50px;
@@ -37,9 +37,9 @@
     </head>
 
     <body>
-        <button id="consoleContentAsMarkdown" type="button">获取markdown文本</button>
-        <button id="consoleContentAsHTML" type="button">获取html文本</button>
-        <button id="consoleTableOfContent" type="button">获取目录</button>
+        <button id="consoleContentAsMarkdown" type="button">get markdown and print by console.info</button>
+        <button id="consoleContentAsHTML" type="button">get html and print by console.info</button>
+        <button id="consoleTableOfContent" type="button">get table of contents and print by console.info</button>
         <div id="stackedit"></div>
     </body>
 
