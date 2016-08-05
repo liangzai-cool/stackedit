@@ -3,7 +3,7 @@ StackEdit
 
 StackEdit is a full-featured, open-source Markdown editor based on PageDown, the Markdown library used by Stack Overflow and the other Stack Exchange sites.
 
-Main showcase: https://stackedit.io/.
+Main showcase: https://liangzai-cool.github.io/stackedit/.
 
 Support StackEdit:
 
