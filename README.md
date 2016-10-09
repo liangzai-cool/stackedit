@@ -1,55 +1,11 @@
-StackEdit
-=========
+# Website
+ http://xueliang.org/
 
-StackEdit is a full-featured, open-source Markdown editor based on PageDown, the Markdown library used by Stack Overflow and the other Stack Exchange sites.
+# Demo
+ https://liangzai-cool.github.io/stackedit/
 
-Main showcase: https://stackedit.io/.
-
-Support StackEdit:
-
-[![](https://cdn.monetizejs.com/resources/button-32.png)](https://monetizejs.com/authorize?client_id=ESTHdCYOi18iLhhO&summary=true)
-
-> **Note:**
->
-> - Documents are stored in the [browser's local storage][1], which means they are not shared between different browsers/computers. Clearing your browser's data may delete all your local documents.
-> - Full access to Dropbox or Google Drive is required to be able to import any document in StackEdit. Imported documents are downloaded in your browser and are not transmitted to a server.
-
-### StackEdit can:
-
- - Manage multiple Markdown documents online or offline
- - Export your documents in Markdown, HTML or PDF and format it using a template
- - Synchronize your Markdown documents in the Cloud
- - Edit existing Markdown documents from Google Drive, Dropbox and your local hard drive
- - Post your Markdown document on Blogger/Blogspot, WordPress, Tumblr
- - Publish your Markdown document on GitHub, Gist, Google Drive, Dropbox or any SSH server
- - Share a link to a Markdown document that renders it in a nice viewer
- - Show statistics about your document
- - Convert HTML to Markdown
-
-### Features:
-
- - Real-time HTML preview with Scroll Link feature to bind editor and preview scrollbars
- - Markdown Extra/GitHub Flavored Markdown support and Prettify/Highlight.js syntax highlighting
- - LaTeX mathematical expressions using MathJax
- - WYSIWYG control buttons
- - Configurable layout
- - Theming support with different themes available
- - A la carte extensions
- - Offline editing
- - Online synchronization using Google Drive (multi-accounts) and Dropbox
- - One click publish on Blogger, Dropbox, Gist, GitHub, Google Drive, SSH server, Tumblr, WordPress
-
-### Documentation:
-
- - [Hello! document][2]
- - [Developer guide][3]
- - [Theming guide][4]
-
-> **NOTE:** This page has been written and published with [StackEdit][5].
-
-
-  [1]: https://developer.mozilla.org/en-US/docs/Web/Guide/DOM/Storage#localStorage
-  [2]: https://github.com/benweet/stackedit/blob/master/public/res/WELCOME.md#welcome-to-stackedit---welcome "Welcome document"
-  [3]: https://github.com/benweet/stackedit/blob/master/doc/developer-guide.md#developer-guide "Developer guide"
-  [4]: https://github.com/benweet/stackedit/blob/master/doc/theming.md#stackedit-theming-guide "Theming guide"
-  [5]: https://stackedit.io/ "StackEdit"
+# Introduce
+ 一个可边写边预览的Markdown编辑器，原版功能比较强大。
+ 由于本人需要在自己博客的admin系统中使用该编辑器，但原版功能过于强大，且使用时，编辑区占用了整个网页。
+ 功能强大意味着代码量很大，故花了很多精力研究该编辑器。
+ 修改后的编辑器可以在指定区域（比如指定大小的DIV）内展开编辑器，编辑器大小可设置，去掉了将文章发布到其他网站等功能，并添加了使用plupload上传图片到七牛云，非常适合在个人博客后台系统引入该编辑器。
